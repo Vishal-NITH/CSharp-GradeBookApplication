@@ -15,7 +15,7 @@ namespace GradeBook.GradeBooks
 
         private static int CompareStudentByGrade(Student s1, Student s2)
         {
-            return s1.AverageGrade.CompareTo(s2.AverageGrade);
+            return s2.AverageGrade.CompareTo(s1.AverageGrade);
         }
         public override char GetLetterGrade(double averageGrade)
         {
@@ -41,8 +41,6 @@ namespace GradeBook.GradeBooks
             {
                 return 'D';
             }
-                   
-            
 
             return 'F';
         }
